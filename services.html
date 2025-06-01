@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - RubyVerse.ai{% endblock %}
+{% block description %}Explore our comprehensive digital services including website development, AI agents, e-commerce solutions, and custom web applications.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-gradient-primary text-white py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1 class="display-4 fw-bold mb-3">Our Services</h1>
+                <p class="lead">Comprehensive digital solutions for modern businesses</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website Development Services -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Website Development Services</h2>
+                <p class="lead text-muted">Professional websites that drive results</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-file-alt fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Landing Page Website</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-primary fw-bold">₹1,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Single page design</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Mobile responsive</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Contact form</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Basic SEO setup</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Social media links</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Landing Page Website') }}" class="btn btn-primary w-100">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-briefcase fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Business/Portfolio Website</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-primary fw-bold">₹4,499</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>5-7 pages</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Professional design</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Portfolio/Gallery</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Service pages</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Admin panel</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Business Website') }}" class="btn btn-primary w-100">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border border-primary">
+                    <div class="badge bg-primary mb-2">Most Popular</div>
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-shopping-cart fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">E-Commerce Website</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-primary fw-bold">₹9,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Product catalog</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Payment gateway</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Inventory management</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Order tracking</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Customer accounts</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='E-Commerce Website') }}" class="btn btn-primary w-100">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-blog fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Blog/News Website</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-primary fw-bold">₹3,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Content management</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Categories & tags</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Comment system</li>
+                        <li><i class="fas fa-check text-success me-2"></i>SEO optimized</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Social sharing</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Blog Website') }}" class="btn btn-primary w-100">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-cogs fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Custom Web App/SaaS MVP</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-primary fw-bold">₹14,999+</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Custom functionality</li>
+                        <li><i class="fas fa-check text-success me-2"></i>User authentication</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Database integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>API development</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Scalable architecture</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Custom Web App') }}" class="btn btn-primary w-100">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Agent Services -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">AI Agent Services</h2>
+                <p class="lead text-muted">Intelligent automation for your business</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border bg-white">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-comments fa-3x text-accent"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Basic AI Assistant</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-accent fw-bold">₹2,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>FAQ handling</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Customer query responses</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Website integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>WhatsApp support</li>
+                        <li><i class="fas fa-check text-success me-2"></i>24/7 availability</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Basic AI Assistant') }}" class="btn btn-accent w-100">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border bg-white border-accent">
+                    <div class="badge bg-accent mb-2">Recommended</div>
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-robot fa-3x text-accent"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Smart AI Workflow Bot</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-accent fw-bold">₹6,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Form handling</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Appointment booking</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Follow-up messages</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Lead collection</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Workflow automation</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Smart AI Workflow Bot') }}" class="btn btn-accent w-100">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border bg-white">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-brain fa-3x text-accent"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Custom AI Agent (Advanced)</h4>
+                    <div class="price-tag mb-3">
+                        <span class="h3 text-accent fw-bold">₹14,999+</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>CRM integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>API task execution</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Business-specific training</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Multi-platform support</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Custom workflows</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Custom AI Agent') }}" class="btn btn-accent w-100">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add-ons Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Add-on Services</h2>
+                <p class="lead text-muted">Enhance your website with additional features</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-globe fa-2x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-2">Domain + Hosting Setup</h5>
+                    <div class="price text-primary fw-bold mb-3">₹1,000</div>
+                    <p class="text-muted small">Complete domain registration and hosting configuration</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-palette fa-2x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-2">Logo Design</h5>
+                    <div class="price text-primary fw-bold mb-3">₹500</div>
+                    <p class="text-muted small">Professional logo design with multiple revisions</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-tools fa-2x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-2">Maintenance</h5>
+                    <div class="price text-primary fw-bold mb-3">₹999/mo</div>
+                    <p class="text-muted small">Regular updates, backups, and technical support</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-search fa-2x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-2">SEO (Basic)</h5>
+                    <div class="price text-primary fw-bold mb-3">₹1,200</div>
+                    <p class="text-muted small">On-page SEO optimization and meta tags setup</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8" data-aos="fade-right">
+                <h3 class="fw-bold mb-3">Need a Custom Solution?</h3>
+                <p class="lead mb-0">Let's discuss your specific requirements and create a tailored solution for your business.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                <a href="{{ url_for('contact') }}" class="btn btn-accent btn-lg px-4">Get Custom Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

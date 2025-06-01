@@ -1,0 +1,371 @@
+{% extends "base.html" %}
+
+{% block title %}Pricing - RubyVerse.ai{% endblock %}
+{% block description %}Transparent and affordable pricing for website development and AI agent services. No hidden costs, pay only for what you need.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-gradient-primary text-white py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1 class="display-4 fw-bold mb-3">Transparent Pricing</h1>
+                <p class="lead">No hidden costs. Pay only for what you need.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website Development Pricing -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Website Development Pricing</h2>
+                <p class="lead text-muted">Professional websites at affordable prices</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border">
+                    <h4 class="fw-bold mb-3">Landing Page</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency">₹</span>
+                        <span class="amount">1,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Single page design</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Mobile responsive</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Contact form</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Basic SEO</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Social media integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>5 days delivery</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Landing Page Website') }}" class="btn btn-primary w-100">Choose Plan</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border">
+                    <h4 class="fw-bold mb-3">Business/Portfolio</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency">₹</span>
+                        <span class="amount">4,499</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>5-7 pages</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Professional design</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Portfolio/Gallery section</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Service pages</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Admin panel</li>
+                        <li><i class="fas fa-check text-success me-2"></i>7-10 days delivery</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Business Website') }}" class="btn btn-primary w-100">Choose Plan</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border border-primary position-relative">
+                    <div class="badge bg-primary position-absolute top-0 start-50 translate-middle px-3 py-2">Most Popular</div>
+                    <h4 class="fw-bold mb-3 mt-3">E-Commerce</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency">₹</span>
+                        <span class="amount">9,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Product catalog</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Payment gateway integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Inventory management</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Order tracking system</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Customer accounts</li>
+                        <li><i class="fas fa-check text-success me-2"></i>14-21 days delivery</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='E-Commerce Website') }}" class="btn btn-primary w-100">Choose Plan</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border">
+                    <h4 class="fw-bold mb-3">Blog/News</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency">₹</span>
+                        <span class="amount">3,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Content management system</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Categories & tags</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Comment system</li>
+                        <li><i class="fas fa-check text-success me-2"></i>SEO optimized</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Social sharing</li>
+                        <li><i class="fas fa-check text-success me-2"></i>7-10 days delivery</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Blog Website') }}" class="btn btn-primary w-100">Choose Plan</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border">
+                    <h4 class="fw-bold mb-3">Custom Web App</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency">₹</span>
+                        <span class="amount">14,999</span>
+                        <span class="period">+</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Custom functionality</li>
+                        <li><i class="fas fa-check text-success me-2"></i>User authentication</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Database integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>API development</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Scalable architecture</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Custom timeline</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Custom Web App') }}" class="btn btn-primary w-100">Get Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Agent Pricing -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">AI Agent Pricing</h2>
+                <p class="lead text-muted">Intelligent automation solutions for your business</p>
+            </div>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border bg-white">
+                    <h4 class="fw-bold mb-3">Basic AI Assistant</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency text-accent">₹</span>
+                        <span class="amount text-accent">2,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>FAQ handling</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Customer query responses</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Website integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>WhatsApp support</li>
+                        <li><i class="fas fa-check text-success me-2"></i>24/7 availability</li>
+                        <li><i class="fas fa-check text-success me-2"></i>3-5 days setup</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Basic AI Assistant') }}" class="btn btn-accent w-100">Choose Plan</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border bg-white border-accent position-relative">
+                    <div class="badge bg-accent position-absolute top-0 start-50 translate-middle px-3 py-2">Recommended</div>
+                    <h4 class="fw-bold mb-3 mt-3">Smart Workflow Bot</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency text-accent">₹</span>
+                        <span class="amount text-accent">6,999</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Form handling</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Appointment booking</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Follow-up messages</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Lead collection automation</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Simple workflow automation</li>
+                        <li><i class="fas fa-check text-success me-2"></i>5-7 days setup</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Smart AI Workflow Bot') }}" class="btn btn-accent w-100">Choose Plan</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-card h-100 p-4 rounded-3 shadow-sm border bg-white">
+                    <h4 class="fw-bold mb-3">Custom AI Agent</h4>
+                    <div class="price-display mb-4">
+                        <span class="currency text-accent">₹</span>
+                        <span class="amount text-accent">14,999</span>
+                        <span class="period">+</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>CRM integration</li>
+                        <li><i class="fas fa-check text-success me-2"></i>API task execution</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Business-specific training</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Multi-platform support</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Advanced workflows</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Custom timeline</li>
+                    </ul>
+                    <a href="{{ url_for('quote', service='Custom AI Agent') }}" class="btn btn-accent w-100">Get Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add-ons Pricing -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Add-on Services</h2>
+                <p class="lead text-muted">Enhance your project with these additional services</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-3">Domain + Hosting Setup</h5>
+                    <div class="price-display-small mb-3">
+                        <span class="currency text-primary">₹</span>
+                        <span class="amount text-primary">1,000</span>
+                    </div>
+                    <p class="text-muted small mb-3">Complete domain registration and hosting configuration for one year</p>
+                    <a href="{{ url_for('quote', service='Domain + Hosting') }}" class="btn btn-outline-primary btn-sm">Add to Project</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-palette fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-3">Logo Design</h5>
+                    <div class="price-display-small mb-3">
+                        <span class="currency text-primary">₹</span>
+                        <span class="amount text-primary">500</span>
+                    </div>
+                    <p class="text-muted small mb-3">Professional logo design with 3 concepts and unlimited revisions</p>
+                    <a href="{{ url_for('quote', service='Logo Design') }}" class="btn btn-outline-primary btn-sm">Add to Project</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-3">Maintenance</h5>
+                    <div class="price-display-small mb-3">
+                        <span class="currency text-primary">₹</span>
+                        <span class="amount text-primary">999</span>
+                        <span class="period text-muted">/mo</span>
+                    </div>
+                    <p class="text-muted small mb-3">Regular updates, security monitoring, backups, and technical support</p>
+                    <a href="{{ url_for('quote', service='Maintenance') }}" class="btn btn-outline-primary btn-sm">Add to Project</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-plus fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-3">Extra Page</h5>
+                    <div class="price-display-small mb-3">
+                        <span class="currency text-primary">₹</span>
+                        <span class="amount text-primary">300</span>
+                        <span class="period text-muted">/page</span>
+                    </div>
+                    <p class="text-muted small mb-3">Additional pages for your website with same design quality</p>
+                    <a href="{{ url_for('quote', service='Extra Page') }}" class="btn btn-outline-primary btn-sm">Add to Project</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="addon-card text-center p-4 rounded-3 shadow-sm border h-100">
+                    <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold mb-3">SEO (Basic)</h5>
+                    <div class="price-display-small mb-3">
+                        <span class="currency text-primary">₹</span>
+                        <span class="amount text-primary">1,200</span>
+                    </div>
+                    <p class="text-muted small mb-3">On-page SEO optimization, meta tags, and search engine submission</p>
+                    <a href="{{ url_for('quote', service='Basic SEO') }}" class="btn btn-outline-primary btn-sm">Add to Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+                <p class="lead text-muted">Common questions about our pricing and services</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="pricingFAQ">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                What's included in the website price?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                All prices include complete design, development, testing, and basic training. Domain and hosting are separate unless specifically included in the package.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                Do you offer payment plans?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Yes, we offer flexible payment plans. Typically 50% advance and 50% on completion. For larger projects, we can discuss custom payment schedules.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                How long does it take to complete a project?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Timeline varies by project complexity. Landing pages take 3-5 days, business websites 7-10 days, and e-commerce sites 14-21 days. Custom projects have flexible timelines.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                Can I upgrade my plan later?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Absolutely! You can upgrade your website or add new features anytime. We'll work with you to enhance your existing site with additional functionality.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8" data-aos="fade-right">
+                <h3 class="fw-bold mb-3">Ready to Get Started?</h3>
+                <p class="lead mb-0">Choose your plan and let's build something amazing together!</p>
+            </div>
+            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                <a href="{{ url_for('contact') }}" class="btn btn-accent btn-lg px-4 me-3">Get Quote</a>
+                <a href="tel:+917322986030" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fab fa-whatsapp me-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

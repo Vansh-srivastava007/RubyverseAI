@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-gradient-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="display-4 fw-bold mb-4">
+                    Digital Solutions & <span class="text-accent">AI Services</span> for Modern Businesses
+                </h1>
+                <p class="lead mb-4">
+                    We help small businesses, startups, and professionals in India go digital with professional websites and smart AI-powered assistants.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="{{ url_for('contact') }}" class="btn btn-accent btn-lg px-4">
+                        <i class="fas fa-rocket me-2"></i>Get Started
+                    </a>
+                    <a href="tel:+917322986030" class="btn btn-outline-light btn-lg px-4">
+                        <i class="fab fa-whatsapp me-2"></i>Talk to an AI Agent
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center" data-aos="fade-left">
+                <div class="hero-image">
+                    <svg width="500" height="400" viewBox="0 0 500 400" class="img-fluid">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- AI Brain -->
+                        <circle cx="250" cy="150" r="80" fill="url(#grad1)" opacity="0.8"/>
+                        <circle cx="250" cy="150" r="60" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+                        <circle cx="250" cy="150" r="40" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+                        <!-- Connection Lines -->
+                        <line x1="180" y1="120" x2="320" y2="180" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+                        <line x1="180" y1="180" x2="320" y2="120" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+                        <!-- Devices -->
+                        <rect x="100" y="280" width="80" height="50" rx="5" fill="#ffffff" opacity="0.9"/>
+                        <rect x="320" y="280" width="80" height="50" rx="5" fill="#ffffff" opacity="0.9"/>
+                        <!-- Text -->
+                        <text x="250" y="380" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">AI-Powered Solutions</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold mb-3">Our Services</h2>
+            <p class="lead text-muted">Comprehensive digital solutions tailored for your business needs</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-laptop-code fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Website Development</h4>
+                    <p class="text-muted mb-4">Professional websites that convert visitors into customers. From landing pages to full e-commerce stores.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Landing Pages from ₹1,999</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Business Websites from ₹4,499</li>
+                        <li><i class="fas fa-check text-success me-2"></i>E-Commerce Stores from ₹9,999</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Custom Web Apps from ₹14,999</li>
+                    </ul>
+                    <a href="{{ url_for('pricing') }}" class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card h-100 p-4 rounded-3 shadow-sm border">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-robot fa-3x text-accent"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">AI Agent Services</h4>
+                    <p class="text-muted mb-4">Smart AI assistants that automate tasks, handle customer queries, and improve your business efficiency.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li><i class="fas fa-check text-success me-2"></i>Basic AI Assistant from ₹2,999</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Smart Workflow Bot from ₹6,999</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Custom AI Agents from ₹14,999</li>
+                        <li><i class="fas fa-check text-success me-2"></i>WhatsApp & Website Integration</li>
+                    </ul>
+                    <a href="{{ url_for('pricing') }}" class="btn btn-accent">View Pricing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold mb-3">Why Choose RubyVerse.ai?</h2>
+            <p class="lead text-muted">We understand the unique needs of Indian businesses</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-rupee-sign fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Affordable Pricing</h5>
+                    <p class="text-muted">Transparent pricing designed for small businesses and startups in India.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-clock fa-3x text-accent"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Quick Turnaround</h5>
+                    <p class="text-muted">Get your website or AI assistant up and running in days, not months.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-headset fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Local Support</h5>
+                    <p class="text-muted">Dedicated support in Hindi and English, understanding local market needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8" data-aos="fade-right">
+                <h3 class="fw-bold mb-3">Ready to Transform Your Business?</h3>
+                <p class="lead mb-0">Let's build something amazing together. Get a free consultation today!</p>
+            </div>
+            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                <a href="{{ url_for('contact') }}" class="btn btn-accent btn-lg px-4 me-3">Request a Quote</a>
+                <a href="tel:+917322986030" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fab fa-whatsapp me-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - RubyVerse.ai{% endblock %}
+{% block description %}Get in touch with RubyVerse.ai for your website development and AI agent needs. Call, WhatsApp, or send us a message for a free consultation.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-gradient-primary text-white py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                <p class="lead">Let's build something amazing together</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Contact Information -->
+            <div class="col-lg-4" data-aos="fade-right">
+                <div class="contact-info">
+                    <h3 class="fw-bold mb-4">Get in Touch</h3>
+                    <p class="text-muted mb-4">
+                        Ready to transform your business? We're here to help you every step of the way. Choose your preferred method to reach us.
+                    </p>
+                    
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone fa-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Phone / WhatsApp</h6>
+                                <a href="tel:+917322986030" class="text-decoration-none">+91-7322986030</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fa-lg text-accent"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Email</h6>
+                                <a href="mailto:vanshsrivastava252@gmail.com" class="text-decoration-none">vanshsrivastava252@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt fa-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Location</h6>
+                                <span class="text-muted">Bihar, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-clock fa-lg text-accent"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Business Hours</h6>
+                                <span class="text-muted">Mon - Sat: 9:00 AM - 7:00 PM IST</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Action Buttons -->
+                    <div class="quick-actions mt-4">
+                        <a href="tel:+917322986030" class="btn btn-primary btn-lg w-100 mb-3">
+                            <i class="fas fa-phone me-2"></i>Call Now
+                        </a>
+                        <a href="https://wa.me/917322986030" target="_blank" class="btn btn-success btn-lg w-100 mb-3">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp Chat
+                        </a>
+                        <a href="mailto:vanshsrivastava252@gmail.com" class="btn btn-outline-primary btn-lg w-100">
+                            <i class="fas fa-envelope me-2"></i>Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="col-lg-8" data-aos="fade-left">
+                <div class="contact-form bg-light p-4 rounded-3">
+                    <h3 class="fw-bold mb-4">Send us a Message</h3>
+                    <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form action="{{ url_for('send_message') }}" method="POST" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-bold">Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-bold">Email *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-bold">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="service" class="form-label fw-bold">Service Interest</label>
+                                <select class="form-select" id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <optgroup label="Website Development">
+                                        <option value="Landing Page Website" {% if request.args.get('service') == 'Landing Page Website' %}selected{% endif %}>Landing Page Website - ₹1,999</option>
+                                        <option value="Business Website" {% if request.args.get('service') == 'Business Website' %}selected{% endif %}>Business/Portfolio Website - ₹4,499</option>
+                                        <option value="E-Commerce Website" {% if request.args.get('service') == 'E-Commerce Website' %}selected{% endif %}>E-Commerce Website - ₹9,999</option>
+                                        <option value="Blog Website" {% if request.args.get('service') == 'Blog Website' %}selected{% endif %}>Blog/News Website - ₹3,999</option>
+                                        <option value="Custom Web App" {% if request.args.get('service') == 'Custom Web App' %}selected{% endif %}>Custom Web App/SaaS MVP - ₹14,999+</option>
+                                    </optgroup>
+                                    <optgroup label="AI Agent Services">
+                                        <option value="Basic AI Assistant" {% if request.args.get('service') == 'Basic AI Assistant' %}selected{% endif %}>Basic AI Assistant - ₹2,999</option>
+                                        <option value="Smart AI Workflow Bot" {% if request.args.get('service') == 'Smart AI Workflow Bot' %}selected{% endif %}>Smart AI Workflow Bot - ₹6,999</option>
+                                        <option value="Custom AI Agent" {% if request.args.get('service') == 'Custom AI Agent' %}selected{% endif %}>Custom AI Agent - ₹14,999+</option>
+                                    </optgroup>
+                                    <optgroup label="Add-on Services">
+                                        <option value="Domain + Hosting" {% if request.args.get('service') == 'Domain + Hosting' %}selected{% endif %}>Domain + Hosting Setup - ₹1,000</option>
+                                        <option value="Logo Design" {% if request.args.get('service') == 'Logo Design' %}selected{% endif %}>Logo Design - ₹500</option>
+                                        <option value="Maintenance" {% if request.args.get('service') == 'Maintenance' %}selected{% endif %}>Maintenance - ₹999/mo</option>
+                                        <option value="Basic SEO" {% if request.args.get('service') == 'Basic SEO' %}selected{% endif %}>SEO (Basic) - ₹1,200</option>
+                                    </optgroup>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-bold">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your project requirements, timeline, and any specific features you need..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label text-muted small" for="terms">
+                                        I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+                <p class="lead text-muted">Quick answers to common questions</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="contactFAQ">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="accordion-header" id="contactFaq1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse1">
+                                How quickly can you start on my project?
+                            </button>
+                        </h2>
+                        <div id="contactCollapse1" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                We can typically start within 1-2 business days after receiving your requirements and initial payment. For urgent projects, same-day starts are possible.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="accordion-header" id="contactFaq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse2">
+                                Do you provide free consultations?
+                            </button>
+                        </h2>
+                        <div id="contactCollapse2" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                Yes! We offer free initial consultations to understand your needs and recommend the best solution for your business. Call or WhatsApp us to schedule.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="accordion-header" id="contactFaq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse3">
+                                What information should I prepare before contacting you?
+                            </button>
+                        </h2>
+                        <div id="contactCollapse3" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                Have a clear idea of your business goals, target audience, preferred timeline, and budget range. Any examples of websites or features you like are also helpful.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                        <h2 class="accordion-header" id="contactFaq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse4">
+                                Do you work with clients outside Bihar?
+                            </button>
+                        </h2>
+                        <div id="contactCollapse4" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                Absolutely! While we're based in Bihar, we work with clients across India and internationally. All communication and project management is done remotely.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="fw-bold mb-3">Ready to Get Started?</h3>
+                <p class="lead mb-4">Don't wait! The sooner you start, the sooner you'll see results. Let's discuss your project today.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+917322986030" class="btn btn-accent btn-lg px-4 me-3 mb-3">
+                        <i class="fas fa-phone me-2"></i>Call Now: +91-7322986030
+                    </a>
+                    <a href="https://wa.me/917322986030?text=Hi! I'm interested in your digital solutions. Can we discuss my project?" target="_blank" class="btn btn-outline-light btn-lg px-4 mb-3">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+                    </a>
+                </div>
+                <p class="text-light opacity-75 mt-3 mb-0">
+                    <i class="fas fa-clock me-2"></i>Average response time: Under 2 hours during business hours
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
